@@ -1,10 +1,10 @@
 import { Outlet, NavLink, useLoaderData, Form, redirect, useNavigation,   useSubmit} from "react-router-dom";
-import { getContacts, createContact} from "../contacts";
+import { getContacts, createContact} from "/contacts";
 import { useEffect } from "react";
 
 export async function action() {
   const contact = await createContact();
-  return redirect(`../contacts/${contact.id}/edit`);
+  return redirect(`WAD_CLASS_9_6420101/React_Routing_Tutorial/contacts/${contact.id}/edit`);
 }
 
 export async function loader({ request }) {

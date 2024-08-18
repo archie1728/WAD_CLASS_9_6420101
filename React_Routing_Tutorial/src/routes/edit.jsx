@@ -1,11 +1,11 @@
 import { Form, useLoaderData, redirect, useNavigate } from "react-router-dom";
-import { updateContact } from "../contacts";
+import { updateContact } from "/contacts";
 
 export async function action({ request, params }) {
   const formData = await request.formData();
   const updates = Object.fromEntries(formData);
   await updateContact(params.contactId, updates);
-  return redirect(`../contacts/${contact.id}/edit`);
+  return redirect(`WAD_CLASS_9_6420101/React_Routing_Tutorial/contacts/${contact.id}/edit`);
 }
 
 
