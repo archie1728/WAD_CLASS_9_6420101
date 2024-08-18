@@ -8,6 +8,6 @@ export default defineConfig({
 
   plugins: [react()], 
 
-  base: '/react_routing_tutorial/', 
+  base: '/React_Routing_Tutorial/', 
 
 }) 
